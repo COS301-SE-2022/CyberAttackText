@@ -1,0 +1,24 @@
+import * as ts from 'typescript';
+import { Tree } from '@nrwl/devkit';
+export declare function getDecoratorMetadata(source: ts.SourceFile, identifier: string, module: string): ts.Node[];
+export declare function removeFromNgModule(host: Tree, source: ts.SourceFile, modulePath: string, property: string): ts.SourceFile;
+export declare function addImportToModule(host: Tree, source: ts.SourceFile, modulePath: string, symbolName: string): ts.SourceFile;
+export declare function addImportToTestBed(host: Tree, source: ts.SourceFile, specPath: string, symbolName: string): ts.SourceFile;
+export declare function addDeclarationsToTestBed(host: Tree, source: ts.SourceFile, specPath: string, symbolName: string[]): ts.SourceFile;
+export declare function replaceIntoToTestBed(host: Tree, source: ts.SourceFile, specPath: string, newSymbol: string, previousSymbol: string): ts.SourceFile;
+export declare function getBootstrapComponent(source: ts.SourceFile, moduleClassName: string): string;
+export declare function addRoute(host: Tree, ngModulePath: string, source: ts.SourceFile, route: string): ts.SourceFile;
+export declare function addProviderToModule(host: Tree, source: ts.SourceFile, modulePath: string, symbolName: string): ts.SourceFile;
+export declare function addDeclarationToModule(host: Tree, source: ts.SourceFile, modulePath: string, symbolName: string): ts.SourceFile;
+export declare function addEntryComponents(host: Tree, source: ts.SourceFile, modulePath: string, symbolName: string): ts.SourceFile;
+export declare function readBootstrapInfo(host: Tree, app: string): {
+    moduleSpec: string;
+    modulePath: string;
+    mainPath: string;
+    moduleClassName: string;
+    moduleSource: ts.SourceFile;
+    bootstrapComponentClassName: string;
+    bootstrapComponentFileName: string;
+};
+export declare function getDecoratorPropertyValueNode(host: Tree, modulePath: string, identifier: string, property: string, module: string): ts.Node;
+export declare function getTsSourceFile(host: Tree, path: string): ts.SourceFile;
