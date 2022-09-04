@@ -1,0 +1,95 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/cyber-attack-app/src",
+  "prefix": "cyber-attack",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/cyber-attack-app",
+        "index": "apps/cyber-attack-app/src/index.html",
+        "main": "apps/cyber-attack-app/src/main.ts",
+        "polyfills": "apps/cyber-attack-app/src/polyfills.ts",
+        "tsConfig": "apps/cyber-attack-app/tsconfig.app.json",
+        "assets": [
+          "apps/cyber-attack-app/src/favicon.ico",
+          "apps/cyber-attack-app/src/assets"
+        ],
+        "styles": ["apps/cyber-attack-app/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/cyber-attack-app/src/environments/environment.ts",
+              "with": "apps/cyber-attack-app/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "cyber-attack-app:build:production"
+        },
+        "development": {
+          "browserTarget": "cyber-attack-app:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/cyber-attack-app/proxy.conf.json"
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "cyber-attack-app:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/cyber-attack-app/**/*.ts",
+          "apps/cyber-attack-app/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/cyber-attack-app"],
+      "options": {
+        "jestConfig": "apps/cyber-attack-app/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
