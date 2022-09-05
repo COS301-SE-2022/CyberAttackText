@@ -10,10 +10,10 @@
  # CyberAttack
 
  Frontend/Backend/DevOps: Sibusiso Mngomezulu - U20441984
- This project was generated using [Nx](https://nx.dev).
+ 
 
  -----------------------------------------------------
- <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+
 
  <b> Sibusiso Mngomezulu: </b> <br>
  About: I am a student at the University of Pretoria and I am in my final year of Bsc Computer Science, I have learnt multiple languages including C++, Java, JavaScript, PHP. I have also learnt algorithmic processes, principles, software designs and their applications. I am passionate and enjoy Computer Science.<br>
