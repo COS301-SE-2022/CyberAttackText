@@ -5,9 +5,8 @@
 
  ----------------------------------------------------
 
- Member
  -------
- # CyberAttack
+ # CyberAttack Member:
 
  Frontend/Backend/DevOps: Sibusiso Mngomezulu - U20441984
  
