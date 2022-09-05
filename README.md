@@ -5,16 +5,14 @@
 
  ----------------------------------------------------
 <h3> <b> SRS Documentation </b> </h3>
+- <a style="font-family: Jetbrains Mono" href="https://github.com/COS301-SE-2022/CyberAttackText/blob/main/SRS%20documentatation.pdf">System Requirement Documentation </a>
+ 
 
-
- -------
- # CyberAttack Member:
-
- Frontend/Backend/DevOps: Sibusiso Mngomezulu - U20441984
+ 
  
 
  -----------------------------------------------------
-
+Frontend/Backend/DevOps: Sibusiso Mngomezulu - U20441984
 
  <b> Sibusiso Mngomezulu: </b> <br>
  About: I am a student at the University of Pretoria and I am in my final year of Bsc Computer Science, I have learnt multiple languages including C++, Java, JavaScript, PHP. I have also learnt algorithmic processes, principles, software designs and their applications. I am passionate and enjoy Computer Science.<br>
